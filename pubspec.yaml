@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flame: ^1.28.1
+  flame_audio: ^2.11.6
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,6 +18,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-assets:
-  -assets/images/player.png
-  -assets/images/background.png
+assets:  
+    -assets/images/
+    -assets/images/background.png
+    -assets/audio/
+    -assets/fonts/
+fonts:
+  - family: Game
+    fonts:
+  - asset: assets/fonts/Game.ttf

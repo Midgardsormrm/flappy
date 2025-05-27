@@ -1,17 +1,27 @@
+import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
-import 'package:flame/components.dart';
-import 'package:flappy/Player.dart';
-import 'package:flappy/game/flappy_bird_game.dart';
-import 'package:flutter/widgets.dart';
+import 'package:flappy/game/flappy_game.dart';
+import 'package:flappy/screens/game_over.dart';
+import 'package:flappy/screens/main_menu.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-class MyGame extends FlameGame {
-  @override
-  Future<void> onLoad() async {
-    debugPrint("Game Loaded!");
-  }
-}
+Future<void> main() async {
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+  );
+  WidgetsFlutterBinding.ensureInitialized();
+  await Flame.device.fullScreen();
 
-void main() {
   final game = FlappyBirdGame();
-  runApp(GameWidget(game: FlappyBirdGame()));
+  runApp(
+    GameWidget(
+      game: game,
+      initialActiveOverlays: const ['mainMenu'],
+      overlayBuilderMap: {
+        'mainMenu': (context, _) => MainMenuScreen(game: game),
+        'gameOver': (context, _) => GameOverScreen(game: game),
+      },
+    ),
+  );
 }
