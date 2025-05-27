@@ -9,21 +9,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flame: ^1.28.1
+  flame: ^1.29.0
   flame_audio: ^2.11.6
+  flutter_launcher_icons: ^0.14.3
+  cupertino_icons: ^1.0.8
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
 
 flutter:
-  uses-material-design: true
-assets:  
-    -assets/images/
-    -assets/images/background.png
-    -assets/audio/
-    -assets/fonts/
-fonts:
-  - family: Game
-    fonts:
-  - asset: assets/fonts/Game.ttf
+
+  uses-material-design: true 
+
+  assets: 
+    - assets/images/
+    - assets/audio/
+    - assets/fonts/
+
+  fonts:              
+    - family: Game
+      fonts:
+        - asset: assets/fonts/Game.ttf
