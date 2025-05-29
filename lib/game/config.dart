@@ -5,4 +5,6 @@ class Config {
   static const cloudHeight = 70.0;
   static const birdVelocity = 210.0;
   static const gravity = 100.0;
+  final double birdJumpForce = -300.0;
+  final double pipeSpawnInterval = 2.0;
 }
