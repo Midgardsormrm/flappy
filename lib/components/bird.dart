@@ -11,6 +11,7 @@ import 'package:flappy/game/flappy_game.dart';
 import 'package:flutter/widgets.dart';
 
 class Bird extends SpriteGroupComponent<BirdMovement>
+    // ignore: deprecated_member_use
     with HasGameRef<FlappyBirdGame>, CollisionCallbacks {
   Bird();
 
@@ -26,12 +27,13 @@ class Bird extends SpriteGroupComponent<BirdMovement>
 
     size = Vector2(50, 40);
     position = Vector2(50, gameRef.size.y / 2 - size.y / 2);
-    current = BirdMovement.middle;
+    
     sprites = {
       BirdMovement.middle: birdMid,
       BirdMovement.down: birdDown,
       BirdMovement.up: birdUp,
     };
+    current = BirdMovement.middle;
 
     add(CircleHitbox());
   }
