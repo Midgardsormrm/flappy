@@ -1,4 +1,5 @@
 class Assets {
+  // images name ony
   static const background = 'background-day.png';
   static const ground = 'ground.png';
   static const clouds = 'background.png';
@@ -9,6 +10,7 @@ class Assets {
   static const birdUpFlap = 'yellowbird-upflap.png';
   static const birdDownFlap = 'yellowbird-downflap.png';
 
+  // assets/images/*.png
   static const gameOver = 'assets/images/gameover.png';
   static const message = 'assets/images/message.png';
   static const menu = 'assets/images/menu.jpg';
