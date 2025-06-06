@@ -23,11 +23,11 @@ class MainMenuScreen extends StatelessWidget {
           height: double.infinity,
           decoration: const BoxDecoration(
             image: DecorationImage(
-            image: AssetImage(Assets.menu),
+              image: AssetImage(Assets.menu),
               fit: BoxFit.cover,
             ),
           ),
-          // child: Image.asset(Assets.message),
+          child: Image.asset(Assets.message),
         ),
       ),
     );

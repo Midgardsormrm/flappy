@@ -2,7 +2,7 @@ class Assets {
   // images name ony
   static const background = 'background-day.png';
   static const ground = 'ground.png';
-  static const clouds = 'background.png';
+  static const clouds = 'background-day.png';
   static const pipe = 'pipe-green.png';
   static const pipeRotated = 'pipe-rotated.png';
 
