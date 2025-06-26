@@ -1,8 +1,8 @@
 # Flappy Bird
 
-![Screenshot 1](https://github.com/AnishHazra/Flappy-Bird-Game/assets/121759157/1387ecd9-b110-4141-ae52-ff25babebf05)
-![Screenshot 2](https://github.com/AnishHazra/Flappy-Bird-Game/assets/121759157/344c430e-c0e9-4155-877e-728a8209ff56)
-![Screenshot 3](https://github.com/AnishHazra/Flappy-Bird-Game/assets/121759157/23044898-9389-4a17-beba-fcc1a987c26f)
+![Screenshot 1](publication/screenshot1.png)
+![Screenshot 2](publication/screenshot2.png)
+![Screenshot 3](publication/screenshot3.png)
 
 ## Description
 
