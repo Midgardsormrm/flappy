@@ -38,15 +38,16 @@ These instructions will help you get a copy of the project up and running on you
 3. Install dependencies.
    ```bash
    flutter pub get
-   
+      
 4. Run the app.
    ```bash
    flutter run
-
+   
 ### Installation way 2
-
 1. Install APK from releases.
-
+   ```bash
+   https://github.com/Midgardsormrm/flappy/releases
+   
 2. Install it on android or move it on android emulator
 
 ## Usage
