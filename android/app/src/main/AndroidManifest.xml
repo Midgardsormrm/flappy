@@ -2,7 +2,7 @@
     <application
         android:label="FlappyBird"
         android:name="${applicationName}"
-        android:icon="flappy\assets\images\icon7.png">
+        android:icon="@mipmap/icon7">
         <activity
             android:name=".MainActivity"
             android:exported="true"
